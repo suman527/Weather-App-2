@@ -42,4 +42,6 @@ This weather app uses the OpenWeatherMap API to fetch weather data based on the 
 Weather data is provided by OpenWeatherMap.
 
 ## Screenshot
-![image](https://github.com/suman527/Weather-App-2/assets/109234120/c2a968aa-73a6-4b4a-a73f-ac5250790000)
+![image](https://github.com/suman527/Weather-App-2/assets/109234120/4ad0c9d1-f7bf-4a08-8271-05d87a6f78fb)
+
+
