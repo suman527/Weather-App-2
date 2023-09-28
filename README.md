@@ -15,4 +15,31 @@ https://weather-app-new2.netlify.app/
 - The app is styled to provide a visually appealing and user-friendly experience. Attention has been given to layout, color scheme, and readability.
 - The app is designed to be responsive and works well on both desktop and mobile devices. It has been tested for usability on various screen sizes.
 
-  
+
+## Technologies Used :
+- HTML
+- CSS
+- JavaScript
+- OpenWeatherMap API
+
+
+## Getting Started
+Open the `index.html` file in your web browser.
+
+
+## Usage : 
+- Enter a city name in the search input field.
+- Click the "Get Weather" button to fetch and display weather information for the specified location.
+- Use the temperature unit toggle to switch between Celsius and Fahrenheit.
+- Optionally, grant geolocation permissions when prompted to automatically fetch weather data for your current location.
+- The temperature, humidity, wind speed, Date, Time, and weather description will be shown along with a corresponding weather icon.
+
+
+## API
+This weather app uses the OpenWeatherMap API to fetch weather data based on the user's location input. You will need to sign up for a free API key and replace the placeholder in the JavaScript file with your own API key.
+
+## Credits
+Weather data is provided by OpenWeatherMap.
+
+## Screenshot
+![image](https://github.com/suman527/Weather-App-2/assets/109234120/c2a968aa-73a6-4b4a-a73f-ac5250790000)
