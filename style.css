@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  :root {
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --blue-1: #1f3648;
+    --blue-2: #4475ef;
+    --shadow: rgba(9, 51, 90, 0.2);
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+  }
+  .wrapper {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .container {
+    width: 100%;
+    background: var(--transp-white-2);
+    backdrop-filter: blur(10px);
+    padding: 3em 1.8em;
+    border: 2px solid var(--transp-white-2);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    text-align: center;
+  }
+  .shape {
+    position: absolute;
+    background-color: var(--transp-white-1);
+    backdrop-filter: blur(1.2em);
+    border: 2px solid var(--transp-white-2);
+    border-radius: 50%;
+  }
+  .shape-1 {
+    height: 13em;
+    width: 13em;
+    right: -6.5em;
+    top: 1.8em;
+  }
+  .shape-2 {
+    height: 11em;
+    width: 11em;
+    bottom: -3.7em;
+    left: -2.5em;
+  }
+  .search-container {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+  }
+  .search-container input,
+  .search-container button {
+    outline: none;
+    font-size: 1em;
+    border: none;
+  }
+  .search-container input {
+    padding: 0.7em;
+    background-color: transparent;
+    border-bottom: 2px solid var(--transp-white-1);
+    color: var(--white);
+    font-weight: 300;
+  }
+  .search-container input::placeholder {
+    color: var(--off-white);
+  }
+  .search-container input:focus {
+    border-color: var(--white);
+  }
+  .search-container button {
+    color: var(--blue-2);
+    background-color: var(--white);
+    border-radius: 0.3em;
+  }
+  #result h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin: 1.25em 0;
+  }
+  .weather,
+  .desc {
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 2em;
+  }
+  .weather {
+    margin-top: -0.7em;
+  }
+  #result img {
+    margin: 0.6em 0 0 0;
+    width: 6.5em;
+    filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+  }
+  #result h1 {
+    font-size: 4em;
+    margin: 0.5em 0 0.7em 0;
+    line-height: 0;
+    font-weight: 400;
+    color: var(--white);
+    margin-left: 30px;
+  }
+  .temp-container {
+    display: flex;
+    justify-content: center;
+  }
+  .temp-container div {
+    padding: 0.3em 1em;
+  }
+  .temp-container div:first-child {
+    border-right: 1px solid var(--transp-white-1);
+  }
+  .temp-container .title {
+    font-weight: 600;
+    color: var(--white);
+  }
+  .temp-container .temp {
+    font-weight: 300;
+    color: var(--off-white);
+  }
+  .msg {
+    margin-top: 1.8em;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  @media screen and (max-width: 450px) {
+    .wrapper {
+      font-size: 14px;
+    }
+    .unit-toggle label {
+      margin-right: 10px;
+      color: #333;
+  }
+  
+  .weather-info {
+      margin-top: 20px;
+      text-align: center;
+  }
+
+/* Additional CSS for unit selection dropdown */
+.unit-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.unit-toggle label {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.unit-toggle select {
+  padding: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Your existing CSS code here */
+/* ... */
+
+/* Media query for screens with a maximum width of 768px (typical tablet size) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2em 1em; /* Reduce padding for smaller screens */
+  }
+
+  .search-container {
+    grid-template-columns: 1fr; /* Display search input and buttons in a single column */
+  }
+
+  /* Adjust font size for smaller screens */
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens with a maximum width of 450px (typical smartphone size) */
+@media screen and (max-width: 450px) {
+  /* Modify the search container for better mobile usability */
+  .search-container {
+    grid-template-columns: 1fr; /* Display search input and buttons in a single column */
+    gap: 0.5em;
+  }
+
+  .unit-toggle {
+    margin-top: 10px; /* Add some spacing for better mobile appearance */
+  }
+}
+
+
+  }
+  
